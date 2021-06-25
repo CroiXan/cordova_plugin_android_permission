@@ -7,11 +7,13 @@
   <license>MIT</license>
 
   <platform name="android">
-	
-	<config-file target="AndroidManifest.xml" parent="/*">
-      <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
-    </config-file>
 
+	<config-file target="AndroidManifest.xml" parent="/manifest">
+        <queries>
+			<package android:name="com.whatsapp" />
+		</queries>
+    </config-file>
+	
   </platform>
   
 </plugin>
